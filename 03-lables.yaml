@@ -8,6 +8,6 @@ metadata:
     environment: dev
 spec:
   containers:
-   -name: nginx
+   - name: nginx
     image: nginx
    
