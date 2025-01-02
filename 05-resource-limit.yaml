@@ -6,8 +6,9 @@ metadata:
   project: expense
   env: prod
 spec:
- - name: nginx
-   image: nginx
+ containers:
+  - name: nginx
+    image: nginx
   resources:
    request: 
     cpu: 100m cpu
