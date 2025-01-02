@@ -7,12 +7,12 @@ metadata:
   env: prod
 spec:
  containers:
-  - name: nginx
+ - name: nginx
    image: nginx
    resources:
-    request: 
-     cpu: 100m cpu
-     memory: 80mi
+     request: 
+       cpu: 100m cpu
+       memory: 80mi
     limits:
-     cpu: 120m cpu
-     memory: 100 mi 
+       cpu: 120m cpu
+       memory: 100 mi 
