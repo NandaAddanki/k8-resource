@@ -1,29 +1,33 @@
-kind: pod
+# kind: pod
+# apiVersion: v1
+# metadata: 
+#  name: memory limit
+#  lables:
+#   project: expense
+#   env: prod
+# spec:
+#  containers:
+#  - name: nginx
+#    image: nginx
+#    resources:
+#      request: 
+#       cpu: 100m 
+#       memory: 80Mi
+#     limits:
+#       cpu: 120m 
+#       memory: 100Mi 
+kind: Pod
 apiVersion: v1
-metadata: 
- name: memory limit
- lables:
-  project: expense
-  env: prod
+metadata:
+  name: limits
 spec:
- containers:
- - name: nginx
-   image: nginx
-   resources:
-     request: 
-      cpu: 100m 
-      memory: 80Mi
-    limits:
-      cpu: 120m 
-      memory: 100Mi 
-
-  #      containers:
-  # - name: nginx
-  #   image: nginx
-  #   resources:
-  #     requests:
-  #       cpu: 100m
-  #       memory: 68Mi
-  #     limits:
-  #       cpu: 120m
-  #       memory: 100Mi
+  containers:
+  - name: nginx
+    image: nginx
+    resources:
+      requests:
+        cpu: 100m
+        memory: 68Mi
+      limits:
+        cpu: 120m
+        memory: 100Mi
