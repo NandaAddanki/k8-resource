@@ -1,8 +1,9 @@
-kind: pod
+kind: Pod
 apiVersion: v1
 metadata:
- name: annotations
- annotations: 
+  name: annotations
+  annotations:
+ 
     imageregistry: "https://hub.docker.com/"
 spec:
  - name: nginx
